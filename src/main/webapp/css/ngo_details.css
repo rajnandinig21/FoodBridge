@@ -1,0 +1,260 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #FFF8EF;
+    color: #24312C;
+}
+
+/* Navbar */
+.navbar {
+    min-height: 76px;
+    padding: 0 5%;
+    background: #174A3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFF8EF;
+    font-size: 23px;
+    font-weight: 750;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    background: #E97856;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.brand-accent {
+    color: #F29A78;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: #F5F4EC;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #F29A78;
+}
+
+.nav-links .logout-btn {
+    padding: 9px 13px;
+    border: 1px solid #F29A78;
+    border-radius: 6px;
+}
+
+.nav-links .logout-btn:hover {
+    background: #E97856;
+    color: #FFFFFF;
+}
+
+/* Page */
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 25px 20px;
+}
+
+.page-heading {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: #C85D3F;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+}
+
+.page-heading h1 {
+    color: #174A3A;
+    font-size: 30px;
+    margin-bottom: 9px;
+}
+
+.page-heading > p:last-child {
+    color: #68766E;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* NGO details */
+.details-section {
+    background: #FFFFFF;
+    border: 1px solid #E8E2D8;
+    border-radius: 10px;
+    padding: 30px 34px;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EAE5DC;
+    margin-bottom: 10px;
+}
+
+.ngo-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    background: #E9EFE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.details-label {
+    color: #C85D3F;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.details-header h2 {
+    color: #174A3A;
+    font-size: 22px;
+    overflow-wrap: anywhere;
+}
+
+.details-list {
+    padding: 10px 0 20px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 19px 0;
+    border-bottom: 1px solid #F0ECE5;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF0E8;
+    color: #C85D3F;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.detail-content {
+    padding-top: 2px;
+    min-width: 0;
+}
+
+.label {
+    display: block;
+    color: #68766E;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.detail-content p {
+    color: #24312C;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 17px;
+    background: #174A3A;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 650;
+    transition: 0.2s ease;
+}
+
+.back-btn:hover {
+    background: #286B54;
+}
+
+footer {
+    padding: 30px 10px 15px;
+    text-align: center;
+    color: #68766E;
+    font-size: 13px;
+}
+
+footer span {
+    color: #E97856;
+}
+
+/* Responsive */
+@media (max-width: 1050px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-container {
+        padding: 28px 16px 15px;
+    }
+
+    .page-heading h1 {
+        font-size: 26px;
+    }
+
+    .details-section {
+        padding: 22px 18px;
+    }
+
+    .details-header h2 {
+        font-size: 19px;
+    }
+}

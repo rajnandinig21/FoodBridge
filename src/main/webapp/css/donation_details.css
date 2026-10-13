@@ -1,0 +1,322 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #FFF8EF;
+    color: #24312C;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    min-height: 76px;
+    padding: 18px 6%;
+    background: #174A3A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+    background: #E97856;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.brand-accent {
+    color: #F29A78;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #F5F5EE;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #F29A78;
+}
+
+.nav-links .logout-btn {
+    color: #F29A78;
+}
+
+/* Main content */
+.page-container {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 0 28px;
+}
+
+.page-heading {
+    margin-bottom: 32px;
+    padding-left: 20px;
+    border-left: 5px solid #E97856;
+}
+
+.eyebrow {
+    color: #C85D3F;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+
+.page-heading h1 {
+    color: #174A3A;
+    font-size: 34px;
+    margin-bottom: 9px;
+}
+
+.page-heading p:last-child {
+    color: #68766E;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Donation details */
+.details-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 42px;
+    padding: 30px 0;
+    border-top: 1px solid #DCE5DA;
+    border-bottom: 1px solid #DCE5DA;
+}
+
+.photo-section {
+    min-width: 0;
+}
+
+.food-photo,
+.photo-placeholder {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E9EFE6;
+    color: #286B54;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.details-section {
+    min-width: 0;
+}
+
+.section-label {
+    color: #C85D3F;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 1.6px;
+}
+
+.details-section h2 {
+    color: #174A3A;
+    font-size: 29px;
+    margin: 10px 0 22px;
+    overflow-wrap: anywhere;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 13px 0;
+    border-bottom: 1px solid #E1E7DD;
+}
+
+.info-row span,
+.donor-details span {
+    color: #68766E;
+    font-size: 14px;
+}
+
+.info-row strong {
+    color: #24312C;
+    font-size: 14px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.description,
+.address-section {
+    margin-top: 23px;
+}
+
+.description h3,
+.address-section h3 {
+    color: #174A3A;
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.description p,
+.address-section p {
+    color: #68766E;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.request-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+    padding: 13px 25px;
+    background: #E97856;
+    color: #FFFFFF;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 650;
+    transition: background 0.2s ease;
+}
+
+.request-btn:hover {
+    background: #C85D3F;
+}
+
+/* Donor information */
+.donor-section {
+    margin-top: 42px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DCE5DA;
+}
+
+.donor-section h2 {
+    color: #174A3A;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.donor-intro {
+    color: #68766E;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.donor-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 40px;
+}
+
+.donor-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.donor-details strong {
+    color: #24312C;
+    font-size: 14px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* Navigation and footer */
+.back-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: #286B54;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.back-link:hover {
+    color: #C85D3F;
+}
+
+footer {
+    padding: 35px 0 20px;
+    text-align: center;
+    color: #68766E;
+    font-size: 13px;
+}
+
+footer span {
+    color: #E97856;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .details-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .food-photo,
+    .photo-placeholder {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-container {
+        margin-top: 32px;
+        padding: 0 18px;
+    }
+
+    .page-heading h1 {
+        font-size: 28px;
+    }
+
+    .donor-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-row {
+        gap: 12px;
+    }
+}
